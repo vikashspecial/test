@@ -1,0 +1,21 @@
+<div class="book-room-popup">
+    <h2 mat-dialog-title>Book your room</h2>
+    <mat-dialog-content>
+        <div class="room-detail">
+            <h3>Room detail</h3>
+            <div>
+                {{roomDetail.title}}
+                Type: {{roomDetail.roomType}}
+            </div>
+        </div>
+        <div class="date-selection">
+
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions class="d-flex">
+        <div class="actions">
+            <button mat-button mat-dialog-close>Cancel</button>
+            <button mat-button (click)="confirmBooking()">Book</button>
+        </div>
+    </mat-dialog-actions>
+</div>

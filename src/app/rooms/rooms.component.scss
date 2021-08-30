@@ -1,0 +1,50 @@
+.rooms-page {
+    gap: 2rem;
+
+    .rooms-list {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        .room-card {
+            min-height: 14rem;
+            background-color: lightblue;
+            border-radius: 4px;
+            box-shadow: 0 0 10px 0 rgba(#000, 0.15);
+            padding: 1rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .room-title {
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+
+            .room-description {
+                font-size: 1.4rem;
+            }
+
+            .room-type {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: crimson;
+                color: white;
+                padding: 0.5rem;
+                font-size: 1rem;
+                border-bottom-left-radius: 1rem;
+            }
+
+            .availibility {
+                gap: 1rem;
+                margin-top: auto;
+                .book-room {
+                    margin-left: auto;
+                    cursor: pointer;
+                    color: orangered;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<div class="page-container rooms-page d-flex flex-column">
+    <h2>Available rooms</h2>
+    <div class="rooms-list">
+        <div class="room-card" *ngFor="let room of roomsList">
+            <div class="room-type">{{room.roomType}}</div>
+            <div class="room-title">{{room.title}}</div>
+            <div class="room-description">{{room.description}}</div>
+
+            <div class="availibility d-flex align-items-center">
+                <div class="available-rooms">
+                    Available: <strong>{{room.availableRooms}}</strong>
+                </div>
+                <a (click)="bookRoom(room)" class="book-room" *ngIf="room.availableRooms">Book</a>
+            </div>
+        </div>
+    </div>
+</div>

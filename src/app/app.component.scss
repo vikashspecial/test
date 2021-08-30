@@ -1,0 +1,47 @@
+.app-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        flex: 0 0 5rem;
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+
+        gap: 3rem;
+
+        .menu-options {
+            display: flex;
+            gap: 2rem;
+            .menu-item {
+                color: white;
+                text-decoration: none;
+
+                &.active {
+                    border-bottom: 2px solid orange;
+                }
+
+                &:hover {
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+    .content-wrapper {
+        flex: 1 1 auto;
+    }
+
+    .footer {
+        display: flex;
+        flex: 0 0 5rem;
+        background-color: gray;
+        color: blue;
+        align-items: center;
+        justify-content: center;
+    }
+}
